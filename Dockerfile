@@ -6,7 +6,7 @@
 # 构建示例：
 #   cd /home/ubuntu/zhaoyiran/TOOL-Dockerfile/bulkRNA/bulkrna-Bioc-stage1 && docker build -t quay.io/1733295510/bulkrna-bioc-stage1:V1.0.1 .
 
-ARG BASE_IMAGE=quay.io/1733295510/bulkrna-base:V1.0.2
+ARG BASE_IMAGE=quay.io/1733295510/bulkrna-base:V1.0.1
 FROM ${BASE_IMAGE}
 
 LABEL maintainer="1733295510 <1733295510@qq.com>"
