@@ -1,12 +1,12 @@
-# bulkrna-Bioc-stage1（中间镜像）：在 bulkrna-base 上固定 ggplot2 3.5.2、源码 magick 与 Bioconductor 3.20 DE/GSVA/热图核心栈。
-# 完整 bulk-bioc + survival 需再构建 bulkrna-Bioc（基于本镜像）。
+# bulkrna-Bioc-stage1（中间镜像）：在 bulkrna-base:V1.1.1 上固定 ggplot2 3.5.2、源码 magick 与 Bioconductor 3.20 DE/GSVA/热图核心栈。
+# 完整 bulk-bioc + survival 需再构建 bulkrna-Bioc（基于本镜像）。父镜像默认见 BASE_IMAGE。
 #
 # bulkrna-base 已含 gfortran、BiocManager 与 ggplot2 4.x；装 Bioc 前必须将 ggplot2 钉为 3.5.2（clusterProfiler/ggtree 见终镜像说明）。
 #
 # 构建示例：
 #   cd /home/ubuntu/zhaoyiran/TOOL-Dockerfile/bulkRNA/bulkrna-Bioc-stage1 && docker build -t quay.io/1733295510/bulkrna-bioc-stage1:V1.0.1 .
 
-ARG BASE_IMAGE=quay.io/1733295510/bulkrna-base:V1.0.1
+ARG BASE_IMAGE=quay.io/1733295510/bulkrna-base:V1.1.1
 FROM ${BASE_IMAGE}
 
 LABEL maintainer="1733295510 <1733295510@qq.com>"
